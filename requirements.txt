@@ -1,4 +1,3 @@
-plotly
 geojson
-pandas
-
+folium
+streamlit_folium
