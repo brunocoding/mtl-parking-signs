@@ -15,7 +15,7 @@ stringfied_date_day = datetime.datetime.strftime(deployment_date, "%d-%b-%Y")
 stringfied_date_hr = datetime.datetime.strftime(deployment_date, "%H:%M")
 
 locale.setlocale(locale.LC_TIME, 'fr_CA') # this sets the date time formats to es_ES, there are many other options for currency, numbers etc. 
-stringfied_date_day_fr = datetime.datetime.strftime(deployment_date, "%d-%m-%Y")
+stringfied_date_day_fr = datetime.datetime.strftime(deployment_date, "%d-%b-%Y")
 stringfied_date_hr_fr = datetime.datetime.strftime(deployment_date, "%H:%M")
 
 st.text(f'Mise à jour le {stringfied_date_day_fr} à {stringfied_date_hr_fr} / Updated on {stringfied_date_day} at {stringfied_date_hr}')
