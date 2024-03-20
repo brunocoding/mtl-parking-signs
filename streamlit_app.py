@@ -4,7 +4,7 @@ import plotly.express as px
 
 mtl_parking_signs = pd.read_csv("data/signalisation_stationnement.csv")
 
-fig = px.scatter_mapbox(mtl_parking_signs, lat="Latitude", lon="Longitude", hover_name="DESCRIPTION_CAT", hover_data={'Latitude':False, 'Longitude':False, 'DESCRIPTION_RPA':True, 'NOM_ARROND':True},
+fig = px.scatter_mapbox(mtl_parking_signs, lat="Latitude", lon="Longitude", hover_name="Quartier", hover_data={'Latitude':False, 'Longitude':False, 'Description':True, 'Depuis/Since': True},
                         color_discrete_sequence=["red"], zoom=3, height=800)
 fig.update_layout(
     mapbox_style="open-street-map"
