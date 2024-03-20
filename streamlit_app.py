@@ -10,7 +10,7 @@ st.title('Panneaux de stationnement MTL / MTL parking signs')
 
 # Todo auto update deployment_date
 locale.setlocale(locale.LC_TIME, 'en_CA')
-deployment_date = datetime.datetime.strptime('19/06/24 20:43', '%d/%m/%y %H:%M')
+deployment_date = datetime.datetime.strptime('19/03/24 20:43', '%d/%m/%y %H:%M')
 stringfied_date_day = datetime.datetime.strftime(deployment_date, "%d-%b-%Y")
 stringfied_date_hr = datetime.datetime.strftime(deployment_date, "%H:%M")
 
