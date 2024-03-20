@@ -36,7 +36,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 mtl_parking_signs = pd.read_csv("data/signalisation_stationnement.csv")
-fig = px.scatter_mapbox(mtl_parking_signs, lat="Latitude", lon="Longitude", hover_name="Quartier", hover_data={'Latitude':False, 'Longitude':False, 'Description':True, 'Depuis/Since': True},
+fig = px.scatter_mapbox(mtl_parking_signs, lat="Latitude", lon="Longitude", hover_name="Description", hover_data={'Latitude':False, 'Longitude':False, 'Quartier':True, 'Depuis/Since': True},
                         color_discrete_sequence=["red"], zoom=8, height=700)
 fig.update_layout(
     mapbox_style="open-street-map"

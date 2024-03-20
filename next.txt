@@ -1,0 +1,3 @@
+- Add sign icons (probably needs to be migrated to a Heroku/Dash env)
+- Add other layers of data (free parking during snow removal)
+- Scale it depending on the number of accesses
